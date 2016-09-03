@@ -1,0 +1,4 @@
+/vendor
+/nbproject
+/public/packages/
+/composer.lock
