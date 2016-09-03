@@ -1,0 +1,7 @@
+<?php
+
+namespace ##NAMESPACE##\Application\Interfaces;
+
+interface ##INTERFACENAME## {
+
+}

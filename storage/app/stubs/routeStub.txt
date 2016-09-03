@@ -1,0 +1,5 @@
+<?php
+
+Route::get('/##PACKAGENAME##/test', function() {
+    return "You are ready to start building your package.";
+});

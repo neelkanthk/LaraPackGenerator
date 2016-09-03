@@ -1,0 +1,44 @@
+<?php
+
+/**
+ * Service Provider for the package.
+ */
+
+namespace ##NAMESPACE##\Application\Providers;
+
+use Illuminate\Support\ServiceProvider;
+
+class ##PACKAGENAME##ServiceProvider extends ServiceProvider {
+
+    
+    public function register() {
+        $this->app->bind('', function($app) {
+            //define your package dependencies here.
+        });
+    }
+
+    public function boot() {
+
+        //Publishes the configuration file to the application's config directory
+        $this->publishes([
+            __DIR__ . '/../config/##PACKAGENAME##.php' => config_path('##PACKAGENAME##.php'),
+        ]);
+
+        //Load the routes.php file of the package present inside the src/Http Folder
+        require __DIR__ . '/../Http/routes.php';
+
+        //Loading views"
+        $this->loadViewsFrom(__DIR__ . '/../resources/views/##PACKAGENAME##', '##PACKAGENAME##');
+
+        //Publish views and assets
+        $this->publishes([
+            __DIR__ . '/../resources/views/##PACKAGENAME##' => base_path('resources/views/vendor/##PACKAGENAME##'),
+            __DIR__ . '/../resources/assets' => base_path('public/vendor/##PACKAGENAME##'),
+        ]);
+
+        //Adding the custom middleware to the application's IoC container
+        $this->app['router'];
+        ##REGISTER_MIDDLEWARES##
+    }
+
+}
