@@ -1,27 +1,58 @@
-## Laravel PHP Framework
+#LaraPackGenerator
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+###Inspired by the response I got for LaraPackBoiler, I was wondering to create a simple web based application to create laravel packages.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.
+###I wanted to keep the user interface as minimal as possible and yet easy to use. So I started working on Laravel Package Generator.
 
-Laravel is accessible, yet powerful, providing powerful tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
+###Laravel package generator allows you to quickly create a laravel package structure for your project.
 
-## Official Documentation
+##Salient features:
 
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
+1. Create a package of your choice of name.
 
-## Contributing
+2. Define your own package namespace.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
+3. Define your own controller classes, models, middlewares, requests, events, interfaces.
 
-## Security Vulnerabilities
+4. Automatically creates composer.json file, README file for installation instructions.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+5. Adds GNU GPL version 3 licence.
 
-### License
+6. Follows a structured approach to create the package.
 
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+7. All the above features in just few keyboard taps and just one click !!
+
+##How to install and use.
+
+1. Clone the project on your system.
+
+2. Run composer.phar install
+
+3. Run composer.phar dump-autoload
+
+4. Give write permission to bootstrap/cache, storage, public folders.
+
+sudo chmod 777 -R bootstrap/cache
+
+sudo chmod 777 -R storage/
+
+sudo chmod 777 -R public/
+
+5. Run php artisan key:generate
+
+6. Visit the localhost/LaraPackGenerator from browser.
+
+##How to create package.
+
+1. The UI is very easy to understand and use.
+
+2. The Package namespace and Package name are the only required fields to create a directory structure of the pugin.
+
+4. Add a comma separated list of the controller, model classes.
+
+5. Click Generate.
+
+6. That's it. Just save the pop up, expract the zippped file and open up the readme.md file.
+
+##The installations instruction for the created package will be downloaded with package inside the README.md file.
+
