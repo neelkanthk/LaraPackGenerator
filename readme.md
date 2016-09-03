@@ -26,19 +26,19 @@
 
 1. Clone the project on your system.
 
-2. Run composer.phar install
+2. Run `composer.phar install`
 
-3. Run composer.phar dump-autoload
+3. Run `composer.phar dump-autoload`
 
 4. Give write permission to bootstrap/cache, storage, public folders.
 
-4.1. sudo chmod 777 -R bootstrap/cache
+=> `sudo chmod 777 -R bootstrap/cache`
 
-4.2. sudo chmod 777 -R storage/
+=> `sudo chmod 777 -R storage/`
 
-4.3. sudo chmod 777 -R public/
+=> `sudo chmod 777 -R public/`
 
-5. Run php artisan key:generate
+5. Run `php artisan key:generate`
 
 6. Visit the localhost/LaraPackGenerator from browser.
 
