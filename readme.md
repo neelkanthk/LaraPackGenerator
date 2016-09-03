@@ -1,4 +1,4 @@
-#LaraPackGenerator
+#LaraPackGenerator - Beta
 
 ####Inspired by the response I got for LaraPackBoiler, I was wondering to create a simple web based application to create laravel packages.
 
