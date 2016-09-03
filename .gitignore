@@ -2,3 +2,4 @@
 /nbproject
 /public/packages/
 /composer.lock
+/.env
