@@ -1,10 +1,10 @@
 #LaraPackGenerator
 
-###Inspired by the response I got for LaraPackBoiler, I was wondering to create a simple web based application to create laravel packages.
+####Inspired by the response I got for LaraPackBoiler, I was wondering to create a simple web based application to create laravel packages.
 
-###I wanted to keep the user interface as minimal as possible and yet easy to use. So I started working on Laravel Package Generator.
+####I wanted to keep the user interface as minimal as possible and yet easy to use. So I started working on Laravel Package Generator.
 
-###Laravel package generator allows you to quickly create a laravel package structure for your project.
+####Laravel package generator allows you to quickly create a laravel package structure for your project.
 
 ##Salient features:
 
