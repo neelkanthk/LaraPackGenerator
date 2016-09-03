@@ -32,11 +32,11 @@
 
 4. Give write permission to bootstrap/cache, storage, public folders.
 
-sudo chmod 777 -R bootstrap/cache
+4.1. sudo chmod 777 -R bootstrap/cache
 
-sudo chmod 777 -R storage/
+4.2. sudo chmod 777 -R storage/
 
-sudo chmod 777 -R public/
+4.3. sudo chmod 777 -R public/
 
 5. Run php artisan key:generate
 
@@ -52,7 +52,7 @@ sudo chmod 777 -R public/
 
 5. Click Generate.
 
-6. That's it. Just save the pop up, expract the zippped file and open up the readme.md file.
+6. That's it. just download and save the file, extract the zippped file and open up the README.md file.
 
 ##The installations instruction for the created package will be downloaded with package inside the README.md file.
 
