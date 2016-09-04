@@ -24,11 +24,14 @@ class SiteController extends Controller {
                 'middlewares',
                 'requests',
                 'events',
-                'interfaces'
+                'interfaces',
+                'author',
+                'description'
             );
             $requiredFormfields = array(
                 'namespace',
-                'name'
+                'name',
+                'author'
             );
             return view('pages.home')->withFields($formfields)->withRequired($requiredFormfields);
         }

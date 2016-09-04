@@ -32,6 +32,8 @@ class GeneratorController extends Controller {
         $package_requests = Helpers::string_to_array($request->requests);
         $package_events = Helpers::string_to_array($request->events);
         $package_interfaces = Helpers::string_to_array($request->interfaces);
+        Session::put('lpg_session.package_data.package_author', $request->author);
+        Session::put('lpg_session.package_data.package_description', $request->description);
 
         //create a directory skeleton
         //move the directory skeleton to the public directory
@@ -69,7 +71,7 @@ class GeneratorController extends Controller {
         File::deleteDirectory(public_path("packages/$package_name"));
 
 
-        
+
         //download
         $pathToZipFile = public_path("packages/$zipName");
         Session::flash('lpg.downloaded', 'true');

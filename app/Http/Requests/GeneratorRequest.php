@@ -25,6 +25,7 @@ class GeneratorRequest extends Request {
         return [
             'namespace' => 'required|min:2',
             'name' => 'required|min:2',
+            'author' => 'required|min:2',
             //'controllers' => 'required',
             //'models' => 'required',
             //'middlewares' => 'required',

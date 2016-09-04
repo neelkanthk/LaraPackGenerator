@@ -171,9 +171,9 @@ class Helpers {
             //replace ##PACKAGENAME## in composer.json file
             $data = str_replace('##PACKAGENAME##', $name, $contents);
             //replace ##AUTHOR##
-            $data = str_replace('##AUTHOR##', 'neelkanth', $data);
+            $data = str_replace('##AUTHOR##', Session::get('lpg_session.package_data.package_author'), $data);
             //replace ##PACKAGE_DESCRIPTION##
-            $data = str_replace('##PACKAGE_DESCRIPTION##', 'Lorem ipsum doler sit.', $data);
+            $data = str_replace('##PACKAGE_DESCRIPTION##', Session::get('lpg_session.package_data.package_description'), $data);
             //replace ##LICENCE##
             $data = str_replace('##LICENCE##', 'GNU-GPL v3', $data);
             //write to the composer.json file
