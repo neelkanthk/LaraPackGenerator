@@ -249,7 +249,7 @@ class Helpers {
                     $data = str_replace('##REGISTER_MIDDLEWARES##', '//Register package middlewares below.', $tempStr);
                 endif;
                 //write to the file
-                $status = File::put(public_path('packages/' . $name . $helper->provider_dir . $name . 'ServiceProvider.php'), $data);
+                $status = File::put(public_path('packages/' . $name . $helper->provider_dir . $namespace . 'ServiceProvider.php'), $data);
 
             endif;
         } catch (Exception $ex) {
@@ -273,7 +273,7 @@ class Helpers {
                 $eventname = Session::get('lpg_session.package_data.eventname');
                 $data = str_replace('##EVENTNAME##', $eventname, $data);
                 //write
-                $status = File::put(public_path('packages/' . $name . $helper->provider_dir . $name . 'EventServiceProvider.php'), $data);
+                $status = File::put(public_path('packages/' . $name . $helper->provider_dir . $namespace . 'EventServiceProvider.php'), $data);
             } catch (Exception $ex) {
                 Log::error("Error while generating event provider file", ['Exception' => $ex]);
             }
