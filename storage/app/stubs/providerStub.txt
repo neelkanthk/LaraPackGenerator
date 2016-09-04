@@ -8,7 +8,7 @@ namespace ##NAMESPACE##\Application\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
-class ##PACKAGENAME##ServiceProvider extends ServiceProvider {
+class ##NAMESPACE##ServiceProvider extends ServiceProvider {
 
     
     public function register() {

@@ -4,8 +4,8 @@
 
 1. Extract ##PACKAGENAME## archive to the Laravel's vendor folder.
 
-2. Add ##NAMESPACE##\Application\Providers\##PACKAGENAME##ServiceProvider::class to config/app.php's providers array.
-   Add ##NAMESPACE##\Application\Providers\##PACKAGENAME##EventServiceProvider::class to config/app.php's providers array (Optional. Add only if event is created.).
+2. Add ##NAMESPACE##\Application\Providers\##NAMESPACE##ServiceProvider::class to config/app.php's providers array.
+   Add ##NAMESPACE##\Application\Providers\##NAMESPACE##EventServiceProvider::class to config/app.php's providers array (Optional. Add only if event is created.).
 
 3. Add the following line to the project's composer.json psr-4 array:
     
