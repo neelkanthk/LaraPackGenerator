@@ -6,6 +6,10 @@
 
 ####Laravel package generator allows you to quickly create a laravel package structure for your project.
 
+####Setup Video: https://youtu.be/4CXsH6-OdhU
+
+####Blog: https://cheerfulcoder.wordpress.com
+
 ##Salient features:
 
 1. Create a package of your choice of name.
