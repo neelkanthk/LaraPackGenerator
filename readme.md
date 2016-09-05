@@ -46,7 +46,7 @@
 
 1. The UI is very easy to understand and use.
 
-2. The Package namespace and Package name are the only required fields to create a directory structure of the pugin.
+2. The Package namespace, Package name and Package author are the only required fields to create a directory structure of the pugin.
 
 4. Add a comma separated list of the controller, model classes.
 
@@ -54,5 +54,5 @@
 
 6. That's it. just download and save the file, extract the zippped file and open up the README.md file.
 
-##The installations instruction for the created package will be downloaded with package inside the README.md file.
+##The installation instructions for the created package will be downloaded with package inside the README.md file.
 
